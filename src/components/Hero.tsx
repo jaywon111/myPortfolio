@@ -43,10 +43,16 @@ export default function Hero() {
   return (
     <section className="relative w-full h-screen overflow-hidden bg-black text-white">
       <div className="absolute inset-0 z-0">
-        <Canvas camera={{ position: [0, 0, 5], fov: 50 }}>
-          <Environment preset="city" />
-          <VideoPlane />
-        </Canvas>
+        <div className="absolute inset-0 z-0">
+  <video 
+    src="/hero-video.mp4" 
+    autoPlay 
+    muted 
+    loop 
+    playsInline 
+    className="w-full h-full object-cover opacity-70"
+  />
+</div>
       </div>
 
       <div className="absolute inset-0 z-10 bg-gradient-to-r from-black/80 via-black/40 to-transparent pointer-events-none" />
