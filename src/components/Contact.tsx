@@ -17,8 +17,7 @@ export default function Contact() {
     e.preventDefault();
     setSending(true);
     try {
-      // REPLACE "your-form-id" WITH YOUR FORMSPREE ID
-      const res = await fetch("https://formspree.io/f/your-form-id", {
+      const res = await fetch("https://formspree.io/f/xaenjrzz", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
